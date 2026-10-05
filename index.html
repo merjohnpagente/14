@@ -3,23 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffdeeb" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Nunito:wght@600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Valentine</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23e64980' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>"
+    />
+    <title>Will you be my Valentine?</title>
   </head>
   <body>
+    <div class="hearts" aria-hidden="true"></div>
+
     <main class="container">
-      <img class="cat-img" src="img/cat-0.jpg" alt="Picture of a cat" />
-      <p class="title">Will you be my Valentine?</p>
-      <div class="buttons">
-        <button type="button" class="btn btn--yes">Yes</button>
-        <button type="button" class="btn btn--no">No</button>
-      </div>
+      <section class="card">
+        <div class="cat-frame">
+          <img class="cat-img" src="cat-0.jpg" alt="A kitten holding a bouquet of flowers" />
+        </div>
+        <h1 class="title">Will you be my Valentine?</h1>
+        <p class="subtitle" aria-live="polite"></p>
+        <div class="buttons">
+          <button type="button" class="btn btn--yes">Yes</button>
+          <button type="button" class="btn btn--no">No</button>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="script.js"></script>
